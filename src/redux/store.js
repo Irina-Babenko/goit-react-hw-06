@@ -7,7 +7,7 @@ import filtersReducer from './filtersSlice';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['contacts'], // только контакты будут сохранены в локальном хранилище
+  whitelist: ['contacts'],
 };
 
 const persistedContactsReducer = persistReducer(persistConfig, contactsReducer);
